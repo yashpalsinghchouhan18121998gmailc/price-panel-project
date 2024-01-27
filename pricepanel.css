@@ -1,0 +1,102 @@
+.resize {
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+
+}
+
+.resize:hover{
+    height: 153px;
+    width: 153px;
+ 
+}
+
+html{
+font-family: 'open sans', sans-serif;
+
+}
+
+/* h1 {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    color: rgb(253, 253, 253);;
+} */
+
+.btn{
+    margin: 2px;
+    border-radius: 10px;
+    background-color: #ffffffd9;
+    color: rgb(146, 3, 241);
+    border-color: rgb(141, 3, 176);
+    padding: 3px 10px;
+    
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    color :white;
+  
+}
+
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    color: rgb(146, 3, 241);
+}
+
+li{   
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricingplan{
+border-bottom: 1px solid #e1f1ff;
+margin: 15px 25px;
+text-align: center;
+}
+
+.pricingplan:last-child{
+    border: none;
+}
+
+
+
+.panel{
+  background-color: white;
+  border-radius: 40px;
+  padding: 30px;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*if greater than 900px it should covert into flex-direction row*/
+@media (min-width: 900px) {
+    .panel{
+        flex-direction: row;
+    }
+    .pricingplan{
+        border-right:2px solid #e1f1ff; 
+        padding-right: 30px;
+        border-bottom: none;
+        margin-left: 20px;
+    }
+    .pricingplan:last-child{
+        border-right: none;
+    }
+}
+ul{
+    padding: 10px;
+    border-bottom: 0.5px solid #e1f1ff;
+    border-top: 0.5px solid #e1f1ff;;
+}
+
